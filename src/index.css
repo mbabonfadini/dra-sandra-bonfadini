@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 216 31% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 31% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 31% 12%;
+
+    --primary: 198 60% 22%;
+    --primary-foreground: 0 0% 96%;
+
+    --secondary: 200 19% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 84%;
+    --muted-foreground: 216 31% 25%;
+
+    --accent: 198 60% 22%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 84%;
+    --input: 0 0% 84%;
+    --ring: 198 60% 22%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(198 60% 22%), hsl(216 31% 12%));
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
+  }
+
+  .dark {
+    --background: 216 31% 12%;
+    --foreground: 0 0% 96%;
+    --card: 216 31% 16%;
+    --card-foreground: 0 0% 96%;
+    --popover: 216 31% 16%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 200 19% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 198 60% 22%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 216 31% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 198 60% 22%;
+    --accent-foreground: 0 0% 96%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 216 31% 20%;
+    --input: 216 31% 20%;
+    --ring: 200 19% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
