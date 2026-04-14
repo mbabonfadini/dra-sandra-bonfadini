@@ -1,18 +1,10 @@
-export const supabase = {
-  auth: {
-    getSession: () => Promise.resolve({ data: { session: null } }),
-    onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
-    signInWithPassword: ({ email, password }: any) => Promise.resolve({ data: { user: { email } }, error: null }),
-    signOut: () => Promise.resolve({ error: null })
-  },
-  from: (table: string) => ({
-    insert: (data: any) => Promise.resolve({ data: null, error: null }),
-    select: (query?: string) => Promise.resolve({ data: [], error: null }),
-    update: (data: any) => ({
-      eq: (col: string, val: any) => Promise.resolve({ data: null, error: null })
-    }),
-    delete: () => ({
-      eq: (col: string, val: any) => Promise.resolve({ data: null, error: null })
-    })
-  })
-} as any;
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error("As credenciais do Supabase (URL e Publishable Key) não foram encontradas nas variáveis de ambiente (.env).");
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);

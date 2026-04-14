@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, Users, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
-import portraitImage from "@/assets/advogada-portrait.jpg";
+import portraitImage from "@/assets/advogada-portrait.jpeg";
 import officeImage from "@/assets/about-office.jpg";
 
 const fadeUp = {

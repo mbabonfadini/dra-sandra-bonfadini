@@ -115,7 +115,7 @@ const Contato = () => {
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      placeholder="(00) 00000-0000"
+                      placeholder="(19) 99618-1360"
                       className="w-full bg-card border border-input px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
                     />
                   </div>
@@ -157,7 +157,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h4 className="font-body text-sm font-semibold text-foreground mb-1">Telefone</h4>
-                    <p className="font-body text-sm text-muted-foreground">(00) 00000-0000</p>
+                    <p className="font-body text-sm text-muted-foreground">(19) 99618-1360</p>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h4 className="font-body text-sm font-semibold text-foreground mb-1">Endereço</h4>
-                    <p className="font-body text-sm text-muted-foreground">Endereço do Escritório</p>
+                    <p className="font-body text-sm text-muted-foreground">Av. João Pessoa, 947 - Jardim Europa, Nova Odessa - SP, 13460-000</p>
                   </div>
                 </div>
               </div>

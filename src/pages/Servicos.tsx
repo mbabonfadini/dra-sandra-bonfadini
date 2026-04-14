@@ -80,7 +80,7 @@ const Servicos = () => {
             Entre em contato e converse diretamente com a Dra. Sandra sobre o seu caso.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5519996181360"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-primary text-primary-foreground px-10 py-3.5 font-body text-sm tracking-widest uppercase font-semibold hover:opacity-90 transition-opacity"

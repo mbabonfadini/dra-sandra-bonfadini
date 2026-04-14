@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Scale, Heart, Shield, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-office.jpg";
-import portraitImage from "@/assets/advogada-portrait.jpg";
+import portraitImage from "@/assets/advogada-portrait.jpeg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -39,7 +39,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/5519996181360"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-secondary text-secondary-foreground px-8 py-3 font-body text-sm tracking-widest uppercase font-semibold hover:opacity-90 transition-opacity"
@@ -179,7 +179,7 @@ const Index = () => {
               Entre em contato e agende uma consulta. Estamos prontos para ouvir sua história e defender seus direitos.
             </p>
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5519996181360"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-secondary text-secondary-foreground px-10 py-3.5 font-body text-sm tracking-widest uppercase font-semibold hover:opacity-90 transition-opacity"
