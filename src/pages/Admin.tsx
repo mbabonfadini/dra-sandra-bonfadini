@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Plus, Trash2, Save, ArrowLeft, ImageIcon, LogOut, BarChart3, MessageSquare, Settings, Eye, EyeOff } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import { getServices, saveServices, Service } from "@/lib/servicesStore";
+import { getServices, saveServices, type Service } from "@/lib/servicesStore";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
